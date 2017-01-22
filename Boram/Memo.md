@@ -1,4 +1,4 @@
-* Need to correct * 
+* Need to correct 
 
 Stack 1874 (1/21)
 https://www.acmicpc.net/problem/1874
