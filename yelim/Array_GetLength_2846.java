@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 /**
  * 가장 긴 오르막길 구하기
  * */
