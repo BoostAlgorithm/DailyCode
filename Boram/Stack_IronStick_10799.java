@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Stack_10799 {
+public class Stack_IronStick_10799 {
 
 	public static void main(String[] args) {
 
