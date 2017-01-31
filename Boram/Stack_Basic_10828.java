@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Stack;
 
-public class Stack_10828 {
+public class Stack_Basic_10828 {
 	
 	static void pushStack(Stack st, int number){
 		st.push(number);

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Queue_10845 {
+public class Queue_Basic_10845 {
 
 	public static void main(String[] args) throws Exception {
 		/* 큐 구현하기 (Queue implement) */

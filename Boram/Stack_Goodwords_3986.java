@@ -2,7 +2,7 @@ import java.util.EmptyStackException;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Stack_3986 {
+public class Stack_Goodwords_3986 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);

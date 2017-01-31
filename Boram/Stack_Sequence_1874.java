@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Stack_1874 {
+public class Stack_Sequence_1874 {
 
 	public static void main(String[] args) throws IOException {
 		// 스택 수열 _ Error_ 출력초과 에러 : int배열로 스택 만들어 보기
