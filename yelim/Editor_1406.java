@@ -7,7 +7,7 @@ public class Editor_1406 {
 		
 		long start = System.currentTimeMillis();
         
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		LinkedList<Character> list = new LinkedList<Character>();
 		char [] ch = sc.next().toCharArray();
 		for(char c : ch) list.add(c);
