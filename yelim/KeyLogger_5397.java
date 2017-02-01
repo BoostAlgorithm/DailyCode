@@ -47,6 +47,8 @@ public class KeyLogger_5397 {
 			
 			for(int j=0; j<leftStack.size(); j++) {
 				System.out.print(leftStack.get(j));
+			}
+			for(int j=0; j<rightStack.size(); j++) {
 				System.out.print(rightStack.get(j));
 			}
 			System.out.println();
