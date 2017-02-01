@@ -12,12 +12,14 @@ public class KeyLogger_5397 {
 		
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt(); // 테스트 케이스 갯수
+		Stack<Character> leftStack;
+		Stack<Character> rightStack;
 		
 		for(int i=0; i<n; i++) {
 			char [] chArr = sc.next().toCharArray();
 			
-			Stack<Character> leftStack = new Stack<Character>();
-			Stack<Character> rightStack = new Stack<Character>();
+			leftStack = new Stack<Character>();
+			rightStack = new Stack<Character>();
 			
 			// 커서 기준으로 left/rigth
 			for(char ch : chArr) {
@@ -45,6 +47,7 @@ public class KeyLogger_5397 {
 			
 			for(int j=0; j<leftStack.size(); j++) {
 				System.out.print(leftStack.get(j));
+				System.out.print(rightStack.get(j));
 			}
 			System.out.println();
 		}
