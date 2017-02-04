@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class List_keyLogger_5397 {
+public class List_keyLogger_5397_v2 {
 	/** List로 Keylogger 문제 풀기 **/
 	// List를 사용 : 시간초과 > 런타임에러
 	

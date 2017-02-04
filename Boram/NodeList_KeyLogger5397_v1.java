@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class NodeList_KeyLogger5397 {
+public class NodeList_KeyLogger5397_v1 {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);

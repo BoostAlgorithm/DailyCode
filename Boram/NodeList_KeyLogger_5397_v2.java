@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class NodeList_KeyLogger_5397 {
+public class NodeList_KeyLogger_5397_v2 {
 	public static void main(String[] args) {
 		/** Node로 만든 linkedlist로 Keylogger 문제 풀기 **/
 		// 런타임 에러 > 시간초과
