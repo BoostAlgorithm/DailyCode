@@ -18,7 +18,6 @@ class TreeNode {
 
 public class Tree_1068 {
 
-	
 	static TreeNode nodes[];
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
