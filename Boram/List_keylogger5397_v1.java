@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class List_keylogger5397 {
+public class List_keylogger5397_v1 {
 
 	public static void main(String[] args) {
 		/** List로 Keylogger 문제 풀기 **/
