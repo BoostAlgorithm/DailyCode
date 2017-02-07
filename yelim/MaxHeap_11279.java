@@ -43,6 +43,7 @@ class Heap {
 			}
 		} 
 		
+	//	if(leftIndex < right) sort(leftIndex, right); 
 		if(rightIndex > left) sort(left, rightIndex);
 	}
 	
