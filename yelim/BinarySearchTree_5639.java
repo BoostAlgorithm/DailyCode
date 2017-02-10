@@ -58,7 +58,6 @@ public class BinarySearchTree_5639 {
 	}
 
 	private static Node getBinarySearchTree(List<Integer> list, RootIndex rootIndex, int lowIndex, int highIndex, int length) {
-		
 		if (rootIndex.index >= length || lowIndex > highIndex) {
 			return null;
 		}
