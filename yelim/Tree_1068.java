@@ -6,6 +6,7 @@ class TreeNode {
 	TreeNode parent; // 부모노드
 	int data; // 값
 	List <TreeNode> children; // 자식노드들
+
 	
 	public TreeNode() {
 	}
@@ -29,7 +30,7 @@ public class Tree_1068 {
 			int parent = sc.nextInt(); // 부모 노드
 			if(parent!=-1) {
 				nodes[i].parent=nodes[parent];
-			} else {
+			} else { 
 				nodes[i].parent.data=-1;
 			}
 		}
