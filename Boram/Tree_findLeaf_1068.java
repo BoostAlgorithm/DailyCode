@@ -1,5 +1,5 @@
 import java.io.*;
-
+// 이진트리로 구현했기에 틀렸음
 public class Tree_findLeaf_1068 {
 
 	public static void main(String[] args) throws IOException {
