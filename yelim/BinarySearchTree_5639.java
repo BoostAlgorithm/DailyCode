@@ -37,7 +37,14 @@ class RootIndex {
 }
 
 public class BinarySearchTree_5639 {
-	
+	/**
+	 * 1. 리스트에 전위순회 탐색 결과를 저장하고 트리를 재구성
+	 * 2. 리스트의 첫값은 루트
+	 * 3. 리스트에서 루트부터 탐색할 가장 높은 인덱스까지(루트 기준 리스트의 끝까지) 돌면서 
+	 * 루트보다 처음으로 큰 값의 인덱스찾음 
+	 * 이 인덱스 이후부터는 오른쪽 서브트리구성
+	 * 그 이전까지는 왼쪽 서버트리 구성
+	 * */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		List<Integer> preOrderList = new ArrayList<Integer>();
@@ -63,7 +70,7 @@ public class BinarySearchTree_5639 {
 		}
 		
 		Node root = new Node(list.get(rootIndex.index)); // 루트 노드 생성
-		rootIndex.index++;
+		rootIndex.index++; // 생성할 다음 노드 인덱스
 			
 		if(lowIndex==highIndex) return root;
 		

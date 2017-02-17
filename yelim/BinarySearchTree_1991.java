@@ -51,6 +51,12 @@ class NodeDTO {
 }
 public class BinarySearchTree_1991 {
 
+	/**
+	 * 1. 노드의 값, 자식들의 값을 담은 노드를 생성
+	 * 2. 생성한 노드를 노드들의 배열에 추가
+	 * 3. 이전 노드까지 반복문을 돌면서 노드들의 자식 값을 꺼냄
+	 * 4. 자식의 값이 현재 노드 값과 같다면 현재 생성된 노드를 부모노드 자식노드에 set해줌
+	 * */
 	public static void main(String[] args) throws IOException {
 		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//int n = Integer.parseInt(br.readLine()); // 이진 트리 노드의 갯수
