@@ -11,7 +11,6 @@ public class StackSequence_1874 {
 	 * 2. top보다 작으면 
 	 * top부터 해당 값까지 pop(top-해당 값 만큼)
 	 * top보다 작은 해당값은 항상 top-1밖에 될 수 없음
-	 * 	: 
 	 * */
 	
 	public static void main(String[] args) throws Exception {
