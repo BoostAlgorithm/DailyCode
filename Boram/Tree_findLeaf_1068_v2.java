@@ -63,6 +63,8 @@ public class Tree_findLeaf_1068_v2 {
 			printTree(each, appender + appender);
 		}
 	}
+
+// http://egloos.zum.com/iilii/v/5350490 를 참고하여 문제 해결 (synchronized)
 	
 	public static void deleteTree(Node node){
 		List<Node> children = node.getChildren();	
@@ -73,22 +75,27 @@ public class Tree_findLeaf_1068_v2 {
 //			children.get(i).deleteNode();
 //			deleteTree(children.get(i));
 //		}
-		Iterator<Node> iter = children.iterator();
-		while(iter.hasNext()){
-			Node each = iter.next();
-			if(children.isEmpty()){ break;}
-			each.deleteNode();
-			deleteTree(each);
-		}		
-		node.deleteNode();
+		
+			Iterator<Node> iter = children.iterator();
+			while(iter.hasNext()){
+				Node each = iter.next();
+				if(children.isEmpty()){ break;}
+				try{
+					each.deleteNode();
+					deleteTree(each);
+				}catch(ConcurrentModificationException e){
+					e.printStackTrace();
+				}
+			}		
+			node.deleteNode();
+		
 	}
-
 }
 
 class Node { 
 	private int data = -2; // root: -1
 	private Node parent = null;
-	private List<Node> children = new ArrayList<Node>();
+	private List<Node> children = new LinkedList<Node>();
 	
 	public Node(int data){
 		this.data = data;
