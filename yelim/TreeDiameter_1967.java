@@ -50,7 +50,6 @@ public class TreeDiameter_1967 {
 				if(weightPath[i][j]>0) {
 					// 가장 긴 길이와 가중치 더함
 					int newPath = weightPath[i][j] + pathToLeaf[j][0];
-					
 					//System.out.println(weightPath[i][j] + " + "+ pathToLeaf[j][0] + " = "+ newPath);
 					if(longest < newPath) {
 						nextLongest = longest;
