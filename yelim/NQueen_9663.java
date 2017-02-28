@@ -8,7 +8,7 @@ public class NQueen_9663 {
 	 * 같은 행/열/대각선에 존재하면 X 
 	 * */
 	int count = 0;
-	static int [] queensCols; // 몇 열에 퀸이 배치됐는지 저장
+	static int [] queensCols; // 몇 열에 퀸이 배치됐는지 저장(방의 번지는 행을 의미)
 	static int n;
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -45,9 +45,11 @@ public class NQueen_9663 {
 			count++;
 			return;
 		}
+		
 		for(int i=0; i<n; i++) { // i : 열
 			if(isOccupiable(depth, i)) { // 현재 이 행의 i열에 퀸을 놓아도 되는지 확인
 				queensCols[depth] = i;
+			//	System.out.println(depth + " : " + queensCols[depth] + "===========" + i);
 				countQueen(depth+1);
 			}
 		}
