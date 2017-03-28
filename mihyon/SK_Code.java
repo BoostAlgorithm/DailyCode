@@ -8,8 +8,11 @@ public class SK_Code {
 	/*	Solution2 s2 = new Solution2();
 		System.out.println(s2.solution(15531293));
 		*/
-		Solution3 s3 = new Solution3();
+/*		Solution3 s3 = new Solution3();
 		System.out.println(s3.solution("AABBCC"));
+		*/
+		Solution4 s4 = new Solution4();
+		System.out.println(s4.solution(new int[]{1,6,3,3,7}));//3,3,1,5,5,7
 	}
 	
 	
@@ -61,6 +64,7 @@ class Solution2{
 			
 			while(curP+2 <=S.length()){
 				if(substitution.containsKey(S.substring(curP, curP+2))){
+					ruleCount++;
 					modified.add(S.substring(0,curP)+substitution.get(S.substring(curP, curP+2))+S.substring(curP+2));
 				}curP++;
 				
@@ -73,17 +77,29 @@ class Solution2{
 		
 	}
 
-}/*class Solution4{
+}class Solution4{
 	public boolean solution(int[] A){
+		boolean result=true;
 		int minInd=0;
+		int count=0;
 		for(int i=1; i<A.length; i++){
-			
 			if(A[i-1]<A[i]) minInd =i;
 			else if(A[i-1]>A[i]){
-				if(minInd>0 && A[minInd-1]<A[i]) 
+				if(minInd==0||A[minInd]<A[i]) {
+					int temp = A[minInd];
+					A[i]=temp;
+					A[minInd] = A[i];
+					break;
+				}
 			}
 		}
-		return false;
+		for(int i=1; i<A.length; i++){
+			if(A[i-1]>A[i]) {
+				result =false;
+				break;
+			}
+		}
+		return result;
 		
-	}*/
+	}
 }
